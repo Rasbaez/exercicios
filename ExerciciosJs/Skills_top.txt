@@ -1,3 +1,1 @@
-Oque vou aprender na trybe
-
-Git/ Bash / Unix
+Testando Primeiro Commit
