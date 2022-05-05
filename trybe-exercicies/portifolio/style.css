@@ -1,0 +1,22 @@
+.card{
+    margin-bottom: 25px;
+    
+   }
+   
+   .card-header{
+       background-color: hsl(204, 86%, 53%);
+       align-items: stretch;
+        box-shadow: 0 0.125em 0.25em rgb(10 10 10 / 10%); 
+       display: flex;
+   }
+   
+   
+   .content p:not(:last-child){
+   
+       margin-top: -10px;
+   }
+   
+   .title:not(:last-child){
+   
+       margin-bottom: 0.5rem;
+   }
