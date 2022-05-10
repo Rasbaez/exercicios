@@ -17,9 +17,13 @@ header {
 
 }
 
-#logoimg {
+#logoimg:hover {
 
-    margin-top: -10px;
+    position: relative;
+    transition: 500ms;
+    transform: rotate(2.0turn);
+      cursor:pointer;
+   
 }
 
 .container {
@@ -35,33 +39,91 @@ header {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    display: flex;
+    /*  display: flex;*/
     margin-top: -83px;
     color: white;
-    display: flex;
-    
+   
+
 }
 
 #listnav {
     display: flex;
-   
+ 
     margin-left: 45%;
     list-style: none;
-    justify-content:space-between;
-    gap: 25px;
+    gap: 25px; 
 }
-a{
-    display: block;
+
+a {
+    display: inline;
     text-decoration: none;
     font-weight: 700;
     list-style: none;
-    
+
     color: white;
 
 }
 
-.main-container{
+.main-container {
 
-   background-image: url(./img/HD\ wallpaper_\ white\ and\ black\ abstract\ painting\,\ digital\ art\,\ CGI\,\ render\,\ simple\ background.jpeg);
-   height: 629px;
+    background-image: url(./img/HD\ wallpaper_\ white\ and\ black\ abstract\ painting\,\ digital\ art\,\ CGI\,\ render\,\ simple\ background.jpeg);
+    height: 629px;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+
+
+
+#premium-container {
+
+    background-color: #201b1e7d;
+    width: 626px;
+    height: 454px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 263px;
+    margin-top: 51px;
+    padding: 21px;
+    /* display: flex; */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 16%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: -14px 20px 10px 0 #000000;
+
+}
+
+#be-premium{
+
+        color: white;
+        font-size: xx-large;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+}
+
+#premium-p{
+
+    margin-top: 43px;
+    font-size: xx-large;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    color: #009682;
+
+}
+
+#premium-img:hover{
+
+  
+    margin: auto;
+ 
+    opacity: 1;
+    transition: 400ms;
+    width: 300px;
+    transition: width 2s;
+    
+}
+
+
+
