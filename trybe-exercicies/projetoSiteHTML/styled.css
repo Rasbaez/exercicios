@@ -33,7 +33,7 @@ header {
 }
 
 .navegation {
-
+    
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -45,21 +45,37 @@ header {
 }
 
 #listnav {
-    display: flex;
 
+    
+    display: flex;
     margin-left: 45%;
     list-style: none;
     gap: 25px;
 }
 
-a {
-    display: inline;
+
+#listnav{
+
+   
+  
     text-decoration: none;
     font-weight: 700;
     list-style: none;
 
     color: white;
 
+}
+
+li:hover{
+
+    cursor:pointer;
+    color: red;
+    transform: scale(1.20)
+}
+
+#be-premium{
+
+    color: red;
 }
 
 .main-container {
@@ -83,7 +99,6 @@ a {
     margin-top: 3%;
     padding: 1%;
     border-radius: 16%;
-    /* opacity: 1; */
     transition: 400ms;
     box-shadow: -14px 20px 10px 0 #000000;
 
@@ -111,9 +126,9 @@ a {
 
 
     margin: auto;
-    transition: 400ms;
+    
     width: 300px;
-    transition: width 2s;
+    transition: width 0.50s;
 
 }
 
@@ -133,6 +148,7 @@ a {
     font-size: xxx-large;
     margin-top: 20px;
 }
+
 
 
 #playlists {
@@ -164,6 +180,7 @@ footer {
     height: 200px;
     width: 100%;
     display: inline-block;
+  
 }
 
 
