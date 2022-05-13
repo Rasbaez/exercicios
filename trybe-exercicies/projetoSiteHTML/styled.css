@@ -22,12 +22,13 @@ header {
     position: relative;
     transition: 500ms;
     transform: rotate(2.0turn);
-      cursor:pointer;
-   
+    cursor: pointer;
+
 }
 
-.container {
+.container-header {
 
+   
     height: 40px;
     width: 132px;
     margin-left: 20%;
@@ -42,16 +43,16 @@ header {
     /*  display: flex;*/
     margin-top: -83px;
     color: white;
-   
+
 
 }
 
 #listnav {
     display: flex;
- 
+
     margin-left: 45%;
     list-style: none;
-    gap: 25px; 
+    gap: 25px;
 }
 
 a {
@@ -81,29 +82,25 @@ a {
     height: 454px;
     display: inline-block;
     text-align: center;
-    margin-left: 263px;
-    margin-top: 51px;
-    padding: 21px;
-    /* display: flex; */
-    flex-wrap: nowrap;
-    flex-direction: column;
-    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 30%;
+    margin-top: 3%;
+    padding: 1%;
     border-radius: 16%;
-    opacity: 1;
+    /* opacity: 1; */
     transition: 400ms;
     box-shadow: -14px 20px 10px 0 #000000;
 
 }
 
-#be-premium{
+#be-premium {
 
-        color: white;
-        font-size: xx-large;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bolder;
+    color: white;
+    font-size: xx-large;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bolder;
 }
 
-#premium-p{
+#premium-p {
 
     margin-top: 43px;
     font-size: xx-large;
@@ -113,17 +110,69 @@ a {
 
 }
 
-#premium-img:hover{
+#premium-img:hover {
 
-  
+
     margin: auto;
- 
-    opacity: 1;
     transition: 400ms;
     width: 300px;
     transition: width 2s;
-    
+
+}
+
+.playlist-container {
+
+    height: 380px;
+    width: 100%;
+    background-image: url(./img/fundo-musical-com-lugar-para-seu-texto-13843782.jpg);
+    text-align: center;
+    display: inline-block;
+   
+}
+
+#playlist-title {
+     
+    color: red;
+    font-size: xxx-large;
+    margin-top: 20px;
+}
+
+
+#playlists {
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    list-style: none;
+    font-size: xx-large;
+    margin-top: -1%;
+    margin-right: 24%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#img-container{
+
+    display: inline-block;
+}
+
+
+.footer{
+
+    text-align: center;
+    margin-top: 10%;
+    height: 120px;
 }
 
 
 
+#playlists:hover{
+
+    color: red;
+    transition: 400ms;
+    transform: scale(1.20);
+
+
+}
