@@ -311,12 +311,19 @@ function arrMultiplicator(arr) {
 
     let result = [];
 
-    for (let i = 1; i <= arr.length; i++) {
-        let multiplyIndex = arr[i] * arr[i -1]
-
-        result.push( multiplyIndex );
+    for (let i = 1; i <= arr.length - 1; i++) {
+        if (i == arr.length - 1) {
+            multiplyIndex = arr[i] * 2
+        } else {
+            multiplyIndex = arr[i] * arr[i + 1]
+        }
+        result.push(multiplyIndex);
     }
+
+
     return result;
 }
 
 console.log(arrMultiplicator(numbers));
+
+
