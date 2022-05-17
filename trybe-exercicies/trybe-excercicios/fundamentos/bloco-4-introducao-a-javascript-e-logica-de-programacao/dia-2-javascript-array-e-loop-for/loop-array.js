@@ -166,7 +166,7 @@ function findOddNumbers(arr) {
 // 7 Utilizando for, descubra qual o menor valor contido no array e imprima-o;
 
 
-const findSmallNumber = (arr) => Math.min(arr); 
+const findSmallNumber = (arr) => Math.min(arr);
 
 function findSmallerNumber(arr) {
 
@@ -189,20 +189,134 @@ function findSmallerNumber(arr) {
 //====================================================================================
 // 8 Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
 
+// function arrGerator(size) {
+
+//     let count = [];
+
+//     for (let i = 0; i <= size; i++) {
+//         count.push(i);
+//     }
+
+//     return count;
+// }
+
+// console.log(arrGerator(25));
 
 
+
+//====================================================================================
+// 9 Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
 
 
 function arrGerator(size) {
 
-
-    let count = [];
+    let arrNumbers = [];
 
     for (let i = 0; i <= size; i++) {
-        count.push(i);
+        arrNumbers.push(i);
     }
-   
-    return count;
+
+    return arrNumbers;
+
 }
 
 // console.log(arrGerator(25));
+
+
+const divideArrBy2 = (arr) => arr.map(number => number / 2); // usando HOF
+
+
+
+// console.log(divideArrBy2(arrGerator(25)))
+
+
+function divideArr(arr) {
+
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        result.push(i / 2)
+    }
+
+    return result;
+}
+
+// console.log(divideArr(arrGerator(25)))
+
+
+
+//==================================================================================== 
+// BONUS
+
+// ORDENANDO ARRAYS COM O METODO BUBBLE // 
+// Ordene o array numbers em ordem crescente e imprima seus valores;
+
+
+
+
+
+
+
+// Ordene o array numbers em ordem decrescente e imprima seus valores;
+
+function ordenatorOfArrays(arr) {
+
+
+    for (let index1 = 0; index1 < arr.length; index1++) {
+        for (let index2 = 0; index2 < index1; index2++) {
+            if (arr[index1] < arr[index2]) {
+                let position = arr[index1];
+                arr[index1] = arr[index2];
+                arr[index2] = position;
+
+            }
+
+        }
+    }
+    return arr;
+
+}
+
+// console.log((ordenatorOfArrays(numbers)));
+
+//2 Ordene o array numbers em ordem decrescente e imprima seus valores;
+
+function descendingOrdenatorArr(arr) {
+
+    for (let index1 = 0; index1 < arr.length; index1++) {
+        for (let index2 = 0; index2 < index1; index2++) {
+            if (arr[index1] > arr[index2]) {
+                let position = arr[index2];
+                arr[index2] = arr[index1];
+                arr[index1] = position;
+            }
+        }
+
+
+    }
+
+    return arr;
+
+}
+
+// console.log(descendingOrdenatorArr(numbers));
+
+
+
+// 3 Agora crie um novo array a partir do array numbers, sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push. O resultado deve ser o array abaixo:
+
+
+function arrMultiplicator(arr) {
+
+
+    let result = [];
+
+    for (let i = 1; i <= arr.length; i++) {
+        let multiplyIndex = arr[i] * arr[i -1]
+
+        result.push( multiplyIndex );
+    }
+    return result;
+}
+
+console.log(arrMultiplicator(numbers));
