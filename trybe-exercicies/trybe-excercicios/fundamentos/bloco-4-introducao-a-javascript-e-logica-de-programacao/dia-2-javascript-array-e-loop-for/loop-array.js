@@ -100,7 +100,7 @@ function avarageCalculator(arr) {
     }
 
     let avarage = total / arr.length;
-    return  avarage > 20 ? 'valor maior que 20' : 'valor menor ou igual a 20';
+    return avarage > 20 ? 'valor maior que 20' : 'valor menor ou igual a 20';
 
 }
 
@@ -117,12 +117,12 @@ function avarageCalculator(arr) {
 
 const findBiggestNum = (arr) => Math.max(...arr);
 
-function findBiggestArrNumber(arr){
+function findBiggestArrNumber(arr) {
 
     let biggestNumber = 0;
 
     for (let index = 0; index < arr.length; index++) {
-        if(arr[index] > biggestNumber){
+        if (arr[index] > biggestNumber) {
             biggestNumber = arr[index];
         }
     }
@@ -139,8 +139,70 @@ function findBiggestArrNumber(arr){
 
 // 6 Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
 
-const howMuchOdds = numbers.filter(value => value % 2 === 1);
+// const howMuchOdds = numbers.filter(value =>  value % 2 == 1 ? console.log(value) : 'Nenhum Valor');
+
+function findOddNumbers(arr) {
+
+
+    let oddNumbers = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 1) {
+            oddNumbers.push(arr[i]);
+        } else {
+            'Nenhum Valor';
+        }
+    }
+
+    return oddNumbers;
+}
+
+
+// console.log(findOddNumbers(numbers)) 
+
+
+//====================================================================================
+
+// 7 Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+
+const findSmallNumber = (arr) => Math.min(arr); 
+
+function findSmallerNumber(arr) {
 
 
 
-console.log(howMuchOdds)
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < i - 1) {
+            let smallNumber = arr[i]
+            return `O menor valor do array é ${smallNumber}`
+        }
+    }
+}
+
+
+// console.log(findSmallerNumber(numbers));
+// console.log(findSmallNumber(numbers));
+
+
+//====================================================================================
+// 8 Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+
+
+
+
+function arrGerator(size) {
+
+
+    let count = [];
+
+    for (let i = 0; i <= size; i++) {
+        count.push(i);
+    }
+   
+    return count;
+}
+
+// console.log(arrGerator(25));
