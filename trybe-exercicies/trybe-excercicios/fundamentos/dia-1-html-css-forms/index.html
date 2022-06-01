@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exercicio Form</h1>
+    </header>
+    <hr />
+    <br />
+    <form action="" method="GET" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>About You</legend>
+
+        <label for="nome">Nome:
+            <input type="text" name="nome" id="nome"  placeholderr="Digite seu nome" >
+        </label>
+        <br />
+        <br />
+
+        <label for="email">Email
+            <input type="text" name="email" id="email"  placeholder="Digite seu e-mail" >
+        </label>
+        <br />
+        <br />
+
+        <p>Estilo de música favorito:</p>
+
+        <label for="musica">
+            <input type="radio" name="musica" value="Metal">
+        </label>Metal
+        <label for="musica">
+            <input type="radio" name="musica" value="Samba">
+        </label>Samba
+        <label for="musica">
+            <input type="radio" name="musica" value="Sertanojo">
+        </label>Sertanojo
+        <label for="musica">
+            <input type="radio" name="musica" value="BregaRastapé">
+        </label>BregaRastapé
+        <br />
+        <br />
+        <label for="description">Fale um pouco sobre você:
+            <br />
+
+            <textarea name="description" id="description" rows="10" cols="50" rows="40"></textarea>
+        </label>
+        <br />
+        <br />
+        <label for="data">Data:
+            <input type="date" name="data" id="data">
+        </label>
+        <br />
+        <br />
+        <label for="concorda">Concorda:
+            <input type="checkbox" name="" id="concorda" checked>
+        </label>
+        <label for="semcorda">Semcorda:
+            <input type="checkbox" name="" id="semcorda" >
+        </label>
+        <br />
+        <br />
+        <button type="" id="btn-submit">Enviar</button>
+        <p id="userName"></p>
+    </fieldset>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
