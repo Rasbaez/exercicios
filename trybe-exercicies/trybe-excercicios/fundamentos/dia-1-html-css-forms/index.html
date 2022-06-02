@@ -5,73 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Exercicio Forms</title>
 </head>
 
 <body>
-    <header>
+
+    <header class='container text-center'>
         <h1>Exercicio Form</h1>
     </header>
     <hr />
-    <br />
-    <form action="" method="GET" enctype="multipart/form-data">
+    <form action="" method="GET" enctype="multipart/form-data"></form>
 
-        <fieldset>
-            <legend>About You</legend>
+    <div class='container '>
+        <div class="mb-3">
+            <label for="nome" class="form-label lead">Nome: </label>
+            <input type="text" name="nome" class="form-control" id="nome" placeholderr="Digite seu nome">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label lead">Email:<label>
+                    <input name="email" id="email" class="form-control " type="email" placeholder="Digite seu e-mail">
+        </div>
+    </div>
+    <div class='container mb-3'>
+        <p class="lead lead">Estilo de música favorito</p>
 
-        <label for="nome">Nome:
-            <input type="text" name="nome" id="nome"  placeholderr="Digite seu nome" >
-        </label>
-        <br />
-        <br />
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">Metal</label>
 
-        <label for="email">Email
-            <input type="text" name="email" id="email"  placeholder="Digite seu e-mail" >
-        </label>
-        <br />
-        <br />
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"> Sertanejo </label>
 
-        <p>Estilo de música favorito:</p>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"> Samba </label>
 
-        <label for="musica">
-            <input type="radio" name="musica" value="Metal">
-        </label>Metal
-        <label for="musica">
-            <input type="radio" name="musica" value="Samba">
-        </label>Samba
-        <label for="musica">
-            <input type="radio" name="musica" value="Sertanojo">
-        </label>Sertanojo
-        <label for="musica">
-            <input type="radio" name="musica" value="BregaRastapé">
-        </label>BregaRastapé
-        <br />
-        <br />
-        <label for="description">Fale um pouco sobre você:
-            <br />
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"> Brega </label>
 
-            <textarea name="description" id="description" rows="10" cols="50" rows="40"></textarea>
-        </label>
-        <br />
-        <br />
-        <label for="data">Data:
-            <input type="date" name="data" id="data">
-        </label>
-        <br />
-        <br />
-        <label for="concorda">Concorda:
-            <input type="checkbox" name="" id="concorda" checked>
-        </label>
-        <label for="semcorda">Semcorda:
-            <input type="checkbox" name="" id="semcorda" >
-        </label>
-        <br />
-        <br />
-        <button type="" id="btn-submit">Enviar</button>
-        <p id="userName"></p>
-    </fieldset>
-    </form>
-    <script src="./script.js"></script>
+        <div class='container mb-3'> 
+                <label class='container lead ' for="description">Fale um pouco sobre você:</label>
+                <textarea class='mb-3'name="description" id="description" rows="10" cols="50" rows="40"></textarea>
+            </div>
+      
+          </form>
+        <script src="./script.js"></script>
 </body>
 
 </html>
