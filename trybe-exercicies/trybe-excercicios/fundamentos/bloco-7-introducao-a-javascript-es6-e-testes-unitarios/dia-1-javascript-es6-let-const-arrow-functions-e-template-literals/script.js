@@ -22,8 +22,8 @@ const testingScope = (escopo) => {
   var ifScope = 'Não devo ser ultilizada forado meu escopo (if)'
   var elseScope = 'Não devo ser utilizada fora meu escopo (else)'
 
- return escopo === true ?  ifScope = `ótimo, fui ultilizada no escopo ! `: elseScope
-  
+  return escopo === true ? ifScope = `ótimo, fui ultilizada no escopo ! ` : elseScope
+
 };
 
 console.log(testingScope(true));
@@ -42,3 +42,23 @@ const arrOrdenator = (array) => array.sort((a, b) => a - b); // esta função or
 arrOrdenator(oddsAndEvens)
 
 //===============================================================================================================
+
+// Parte II
+// Abaixo, você verá algumas especificações de algoritmos para desenvolver. É fundamental que você utilize o que aprendeu sobre let, const, arrow functions, template literals e ternary operator.
+// Crie uma função que receba um número e retorne seu fatorial.
+// Na matemática, o fatorial de um número não negativo N, com a notação N!, é o produto de todos os inteiros menores ou iguais a N. Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
+
+
+const calcFactorial = (number) => number === 0 || number === 1 ? 1 : number  * calcFactorial(number -1)
+
+// console.log(calcFactorial(4));
+
+
+//===============================================================================================================
+
+
+
+
+
+
+
