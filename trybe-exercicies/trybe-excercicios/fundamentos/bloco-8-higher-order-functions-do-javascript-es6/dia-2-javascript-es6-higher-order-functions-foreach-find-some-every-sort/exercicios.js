@@ -136,9 +136,9 @@ function everyoneWasBornOnSecXX(books) {
 
 // 6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
 
-function someBookWasReleaseOnThe80s() {
+function someBookWasReleaseOnThe80s(arr) {
   // escreva seu código aqui
-  return books.some(release => release.releaseYear >= 1980 && release.releaseYear <= 1990 );
+  return arr.some(release => release.releaseYear >= 1980 && release.releaseYear <= 1990 );
 }
 
 console.log(someBookWasReleaseOnThe80s(books));
@@ -147,5 +147,16 @@ console.log(someBookWasReleaseOnThe80s(books));
 
 // 7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
 
+function authorUnique(books) {
+  // escreva seu código aqui
+   const arrAges = books.map(age => age.author.birthYear);
+   let count = 0;
+     for(let i = 0; i < arrAges.length; i += 1){
+         if(arrAges[i] === arrAges[i -1] ){
+             count +=1
+         }
+     }
+   return count  >= 1 ? true : false
+}
 
-
+authorUnique(books)
