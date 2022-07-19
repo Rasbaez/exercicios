@@ -1,6 +1,7 @@
 import { Component } from "react";
 import React from "react";
 
+
 class Content extends Component {
   render() {
     const conteudos = [
@@ -28,20 +29,17 @@ class Content extends Component {
 
     const showcontents = conteudos.map((content, index) => {
       const { conteudo, bloco, status } = content;
-
-      return <div key={index}>
-                <h4>{`Ò Conteudo é: ${conteudo}`}</h4>
+        return <div className="card" key={index}>
+                <h4>{`O Conteudo é: ${conteudo}`}</h4>
                 <p>{`Status: ${status}`}</p>
                 <p>{`Bloco: ${bloco}`}</p>        
             </div>;
     });
-
     return (
-      <>
-        <div>
+        <div className="content">
           {showcontents}
         </div>
-      </>
+     
     );
   }
 }
